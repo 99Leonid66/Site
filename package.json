@@ -1,0 +1,66 @@
+{
+  "name": "uniman",
+  "private": true,
+  "description": "App for university managment",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "author": {
+    "name": "Igor Morozov",
+    "email": "morozov.ig.s@gmail.com",
+    "url": "https://vk.com/morigs"
+  },
+  "contributors": [],
+  "bugs": {},
+  "license": "UNLICENSED",
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "mocha test/ --recursive --exit",
+    "build": "nuxt build",
+    "dev": "set \"DEBUG=nuxt:*\" && nodemon",
+    "prestart": "npm run build",
+    "start": "set \"NODE_ENV=production\" && node src/"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "cors": "^2.8.4",
+    "feathers": "^2.2.2",
+    "feathers-configuration": "^0.4.1",
+    "feathers-errors": "^2.9.2",
+    "feathers-hooks": "^2.1.0",
+    "feathers-hooks-common": "^3.7.3",
+    "feathers-rest": "^1.8.0",
+    "feathers-socketio": "^2.0.0",
+    "helmet": "^3.9.0",
+    "nuxt": "^1.0.0-rc11",
+    "nuxt-class-component": "^1.0.3",
+    "serve-favicon": "^2.4.5",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^6.0.0",
+    "vuetify": "^0.16.6",
+    "vuex-class": "^0.2.0",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "mocha": "^4.0.1",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1",
+    "pug": "^2.0.0-rc.4",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "sass-loader": "^6.0.6",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.3"
+  }
+}
